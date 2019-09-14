@@ -1,0 +1,102 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#welcome {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 60px;
+    margin-top: 35px;
+    margin-bottom: -25px;
+}
+
+#blurb {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+#flask {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+#powered {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 11px;
+}
+
+#logo {
+    height: 30px;
+    padding-left: 8px;
+}
+
+.blocks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transform: translate(0px, 15%);
+    height: 400px;
+}
+
+#left-block {
+    margin-right: 175px; margin-bottom: 40px;
+}
+
+.tiles input {
+    height: 48px;
+    width: 300px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.inputs input {
+    width: 200px;
+    height: 26px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+::placeholder {
+    text-transform : none;
+}
+
+#search {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 130px;
+    font-size: 24px;
+}
+
+#dictionary {
+    margin-left: 15px;
+    width: 90px;
+}
+
+#output-results {
+    transform: translate(0px, -60px);
+}
+
+#algo {
+    color: gray;
+    font-family: 'Roboto Mono', monospace;
+}
+
+table {
+    height: 315px;
+    overflow-y:scroll;
+    display:block;
+}
+
+td {
+  height: 20px;
+  padding-right: 40px;
+}
+
+.output-words {
+    font-family: 'Roboto Mono', monospace;
+    transform: translate(0px, -60px);
+}

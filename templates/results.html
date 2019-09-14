@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<div id="output-results">
+    <p id="algo">
+        Algorithm: {{ results[0] }} ({{ results[1] }} ms)
+    </p>
+    <table>
+
+        {% for row in results[2] %}
+
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+</div>
+
+{% endblock %}
