@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<div class="output-results">
+    <p class="detail">
+        Two Letter Words (with hooks)
+    </p>
+    <table>
+
+        {% for row in twos %}
+
+        <tr>
+            <td id="lefthooks">{{ row[0] }}</td>
+            <td id="baseword">{{ row[1] }}</td>
+            <td id="righthooks">{{ row[2] }}</td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+</div>
+
+{% endblock %}

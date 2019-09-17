@@ -17,7 +17,7 @@ class Rack:
 
     def get_choices(self):
 
-        order = "ABCDEFGHIJKLMNOPQRSTUVWXYZ-'?"
+        order = "ABCDEFGHIJKLMNOPQRSTUVWXYZ?"
         tiles = ''.join(sorted(self.tiles.upper(), key=lambda item: order.index(item)))
 
         letters = tiles[:self.num_letters]
@@ -54,7 +54,7 @@ class Rack:
         if len(self.pref) > len(word):
             return False
         for i in range(len(self.pref)):
-            if self.pref[i] != '.' and self.pref[i] != word[i]:
+            if self.pref[i] != '-' and self.pref[i] != word[i]:
                 return False
         return True
 
@@ -64,7 +64,7 @@ class Rack:
         rsuff = self.suff[::-1]
         rword = word[::-1]
         for i in range(len(rsuff)):
-            if rsuff[i] != '.' and rsuff[i] != rword[i]:
+            if rsuff[i] != '-' and rsuff[i] != rword[i]:
                 return False
         return True
 
@@ -75,7 +75,7 @@ class Rack:
         for i in range(end_index):
             flag = False
             for j in range(len(self.substring)):
-                if self.substring[j] != '.' and self.substring[j] != word[i+j]:
+                if self.substring[j] != '-' and self.substring[j] != word[i+j]:
                     flag = True
                     break
             if not flag:

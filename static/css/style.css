@@ -66,9 +66,8 @@
 
 #search {
     margin-top: 30px;
-    margin-bottom: 50px;
     width: 130px;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 #dictionary {
@@ -76,19 +75,31 @@
     width: 90px;
 }
 
-#output-results {
+#twos {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    width: 130px;
+    font-size: 9px;
+}
+
+.output-results {
     transform: translate(0px, -60px);
 }
 
-#algo {
+.detail {
     color: gray;
     font-family: 'Roboto Mono', monospace;
+}
+
+#detail-small {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
 }
 
 table {
     height: 315px;
     overflow-y:scroll;
-    display:block;
+    display: block;
 }
 
 td {
@@ -96,7 +107,30 @@ td {
   padding-right: 40px;
 }
 
+#lefthooks {
+    text-align: right;
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+#baseword {
+    text-align: center;
+    color: DarkRed;
+    padding-right: 5px;
+}
+
+#righthooks {
+    text-align: left;
+    font-size: 12px;
+}
+
+#hi {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 24px;
+}
+
 .output-words {
     font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
     transform: translate(0px, -60px);
 }

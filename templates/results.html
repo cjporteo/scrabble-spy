@@ -6,16 +6,27 @@
 
 {% block body %}
 
-<div id="output-results">
-    <p id="algo">
+<div class="output-results">
+    <p class="detail">
         Algorithm: {{ results[0] }} ({{ results[1] }} ms)
     </p>
     <table>
 
         {% for row in results[2] %}
-
         <tr>
-            <td>{{ row[0] }}</td>
+            <td>
+
+                {% for c in row[0] %}
+
+                    {% set color = 'Black' %}
+                    {% if loop.index-1 in row[2] %}
+                        {% set color = 'DarkRed' %}
+                    {% endif %}
+                    <span style="color: {{ color }}; letter-spacing: -4px;">{{ c }}</span>
+
+                {% endfor %}
+
+            </td>
             <td>{{ row[1] }}</td>
         </tr>
 

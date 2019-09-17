@@ -38,11 +38,14 @@
                     <input type="text" placeholder="Includes letters..." name="includes" id="includes" autocomplete="off">
                     <br>
                 </div>
-                <input type="submit" id="search" value="Search">
+                <input type="submit" id="search" name="action" value="Search">
                 <select name="dictionary" id="dictionary">
                     <option value="twl06">TWL06</option>
                     <option value="sowpods" {% if sowpods %} selected="selected" {% endif %}>SOWPODS</option>
                 </select>
+                <br>
+                <input type="submit" id="twos" name="action" value="Two Letter Words">
+
             </form>
         </div>
 
