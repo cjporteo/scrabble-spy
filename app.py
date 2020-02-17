@@ -11,8 +11,6 @@ sowpods_twos = pickle.load(open('sowpodstwos.pickle', 'rb'))
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
-    with open('./counter.txt', 'r') as fin:
-        counter = int(fin.read())
     if request.method == 'POST':
         dictionary = request.form['dictionary']
         sowpods = dictionary == 'sowpods'
@@ -28,21 +26,19 @@ def index():
             substring = request.form['substring']
             includes = request.form['includes']
             results = solve_tiles(tiles, dd, pref, suff, substring, includes)
-            with open('./counter.txt', 'r') as fin:
-                counter = int(fin.read())
-            if tiles == "":
-                return render_template('index.html', sowpods=sowpods, counter=counter)
+            if not tiles:
+                return render_template('index.html', sowpods=sowpods)
             if results[0] == 'Invalid Input':
-                return render_template('invalid.html', sowpods=sowpods, counter=counter)
+                return render_template('invalid.html', sowpods=sowpods)
             elif results[0] == 'No Valid Words':
-                return render_template('nowords.html', sowpods=sowpods, counter=counter)
-            return render_template('results.html', results=results, sowpods=sowpods, counter=counter)
+                return render_template('nowords.html', sowpods=sowpods)
+            return render_template('results.html', results=results, sowpods=sowpods)
         else:
             twos = sowpods_twos if sowpods else twl06_twos
-            return render_template('twos.html', twos=twos, sowpods=sowpods, counter=counter)
+            return render_template('twos.html', twos=twos, sowpods=sowpods)
 
     else:
-        return render_template('index.html', sowpods=False, counter=counter)
+        return render_template('index.html', sowpods=False)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True)

@@ -15,6 +15,9 @@
     margin-left: 5px;
 }
 
+.link { color: #a3a375; text-decoration: none; } /* CSS link color (red) */
+.link:hover { color: #d6d6c2; } /* CSS link hover (green) */
+
 #flask {
     position: absolute;
     top: 5px;
@@ -126,7 +129,7 @@ td {
 
 #hi {
     font-family: 'Roboto Mono', monospace;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .output-words {
@@ -134,3 +137,4 @@ td {
     font-size: 18px;
     transform: translate(0px, -60px);
 }
+

@@ -29,11 +29,6 @@ def solve_tiles(tiles, dd, pref, suff, substring, includes, t=100):
                1: 10,
                2: 7,
                3: 0}
-    with open('./counter.txt', 'r') as fin:
-        counter = int(fin.read())
-    if tiles != "":
-        with open('./counter.txt', 'w') as fout:
-            fout.writelines(str(counter+1))
 
     if rack.num_letters >= cutoffs[min(rack.num_blanks, 3)]:
         res = rack.frequency_solve()
