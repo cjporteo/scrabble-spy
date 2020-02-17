@@ -15,8 +15,13 @@
     margin-left: 5px;
 }
 
-.link { color: #a3a375; text-decoration: none; } /* CSS link color (red) */
-.link:hover { color: #d6d6c2; } /* CSS link hover (green) */
+.link {
+    color: #a3a375; text-decoration: none;
+}
+
+.link:hover {
+    color: #d6d6c2;
+}
 
 #flask {
     position: absolute;
