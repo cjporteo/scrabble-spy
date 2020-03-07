@@ -156,3 +156,16 @@ td {
     transform: translate(0px, -60px);
 }
 
+@media screen and (max-width: 600px) {
+  #welcome {
+    font-size: 32px;
+  }
+  #blurb {
+    margin-top: -45px;
+    font-size: 14px;
+  }
+  #spy {
+    margin-top: 5px;
+  }
+}
+
