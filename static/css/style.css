@@ -156,7 +156,7 @@ td {
     transform: translate(0px, -60px);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   #welcome {
     font-size: 32px;
   }
