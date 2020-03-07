@@ -167,5 +167,13 @@ td {
   #spy {
     margin-top: 0px;
   }
+
+  #powered {
+    font-size: 8px;
+  }
+
+  #logo {
+    height: 15px;
+  }
 }
 
