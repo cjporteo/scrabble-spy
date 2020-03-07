@@ -4,15 +4,20 @@
 
 #welcome {
     font-family: 'Roboto Mono', monospace;
-    font-size: 60px;
-    margin-top: 35px;
-    margin-bottom: -25px;
+    font-size: 40px;
+    margin-top: 25px;
+    margin-bottom: -35px;
+}
+
+#banner {
+    display: inline-flex;
 }
 
 #blurb {
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
-    margin-left: 5px;
+    margin-left: 102px;
+    margin-top: -40px;
 }
 
 .link {
@@ -34,6 +39,14 @@
 #powered {
     font-family: 'Roboto Mono', monospace;
     font-size: 11px;
+}
+
+#spy {
+    height: 100px;
+    margin-left: -10px;
+    padding-right: 0px;
+    margin-top: 10px;
+    transform: translate(0px, 0px);
 }
 
 #logo {
