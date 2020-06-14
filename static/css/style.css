@@ -157,20 +157,20 @@ td {
 
 @media screen and (max-width: 700px) {
     #welcome {
-        font-size: 20px;
+        font-size: 28px;
         width: 300px;
     }
     #blurb {
         margin-top: -50px;
-        font-size: 10px;
+        font-size: 12px;
         width: 300px;
     }
     #spy {
-        margin-top: -4px;
+        margin-top: 2px;
     }
 
     #powered {
-        font-size: 7px;
+        font-size: 8px;
     }
 
     #logo {
