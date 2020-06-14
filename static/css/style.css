@@ -158,14 +158,14 @@ td {
 
 @media screen and (max-width: 700px) {
   #welcome {
-    font-size: 26px;
+    font-size: 22px;
   }
   #blurb {
     margin-top: -50px;
-    font-size: 14px;
+    font-size: 11px;
   }
   #spy {
-    margin-top: 0px;
+    margin-top: -2px;
   }
 
   #powered {
@@ -175,5 +175,8 @@ td {
   #logo {
     height: 15px;
   }
+  
+    #search {
+        font-size: 20px;
+    }
 }
-
