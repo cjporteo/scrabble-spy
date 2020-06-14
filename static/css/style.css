@@ -156,25 +156,27 @@ td {
 }
 
 @media screen and (max-width: 700px) {
-  #welcome {
-    font-size: 20px;
-  }
-  #blurb {
-    margin-top: -50px;
-    font-size: 10px;
-  }
-  #spy {
-    margin-top: -4px;
-  }
+    #welcome {
+        font-size: 20px;
+        width: 300px;
+    }
+    #blurb {
+        margin-top: -50px;
+        font-size: 10px;
+        width: 300px;
+    }
+    #spy {
+        margin-top: -4px;
+    }
 
-  #powered {
-    font-size: 7px;
-  }
+    #powered {
+        font-size: 7px;
+    }
 
-  #logo {
-    height: 15px;
-  }
-  
+    #logo {
+        height: 15px;
+    }
+
     #search {
         font-size: 20px;
     }
